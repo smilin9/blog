@@ -1,6 +1,6 @@
-# 关于
+# about
 
- Nickname: [smilin9](https://www.smilin9.com/)
+ Nickname: [s9](https://www.smilin9.com/) (?
 
 QQ: 861597494
 
