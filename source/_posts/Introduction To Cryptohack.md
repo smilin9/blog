@@ -2,6 +2,7 @@
 title: Introduction To Cryptohack
 date: 2022-05-01 19:33:32
 tags: cryptohack
+mathjax: true
 ---
 
 做完第一章咯~
@@ -294,11 +295,11 @@ FLAG ^ KEY1 ^ KEY3 ^ KEY2 = 04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf
 
 ###  Analyze
 
-异或的一些性质
+异或的一些性质~
 
 很简单的一点数学运算
 
-$\begin{align}&FK123⊕K1⊕K23\\=&(F⊕K1⊕K2⊕K3)⊕K1⊕(K2⊕K3)\\=&(F⊕K2⊕K3)⊕0⊕(K2⊕K3)\\=&(F⊕K2⊕K3)⊕(K2⊕K3)\\=&F⊕0\\=&F\end{align}$
+$$\begin{align}&FK123⊕K1⊕K23\\=&(F⊕K1⊕K2⊕K3)⊕K1⊕(K2⊕K3)\\=&(F⊕K2⊕K3)⊕0⊕(K2⊕K3)\\=&(F⊕K2⊕K3)⊕(K2⊕K3)\\=&F⊕0\\=&F\end{align}$$
 
 （其实只是想浅试一下数学公式的功能~
 
