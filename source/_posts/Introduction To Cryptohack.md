@@ -386,3 +386,6 @@ print(xor(decode, key))
 # akey = myXORke,猜想key = myXORkey
 ```
 
+## 致谢~~（被迫的）~~
+
+非常感谢 [hawa130](https://hawa130.com/) 对本文排版等问题的细心纠正。
