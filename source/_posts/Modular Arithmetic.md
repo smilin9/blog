@@ -214,13 +214,11 @@ Did you need a calculator?
 
 费马小定理，蛮有意思的一个公式。
 
-$a^{p} \equiv a \mod p$ 浅浅变形一下
-
-$a^{p-1} \equiv 1 \mod p$
+$a^{p} \equiv a \mod p$，浅浅变形一下：$a^{p-1} \equiv 1 \mod p$
 
 主要题目描述这个定理的时候略微有一点写复杂咯，不够优雅（ bushi。
 
-这么推导出来其实没有写代码的必要
+这么推导出来其实没有写代码的必要。
 
 ### Code
 
@@ -258,7 +256,7 @@ What is the inverse element: `3 * d ≡ 1 mod 13`?
 
 对于这道题，有 $3 * d \equiv 1 \mod 13$
 
-因为 gcd(3, 13) = 1，所以可以直接得$$d\ =\ 3^{φ(13)-1}\ *\ 1=3^{11} \mod 13$$ 。
+因为 gcd(3, 13) = 1，所以可以直接得$$d\ =\ 3^{φ(13)-1}\ *\ 1=3^{11} \mod 13$$ 
 
 python 的 pow() 函数真的很好用！
 
@@ -369,7 +367,7 @@ Now for the flag. Given the following 1024 bit prime and 10 integers, find the q
 
 Legendre 符号的欧拉判别法。
 
-$$\begin{align}(a/p)& = 1,\ a ≢ 0 \mod p\ 且\ a\ 是模\ p\ 的二次剩余 \\& = -1,\ a ≢ 0 \mod p\ 且\ a\ 是模\ p\ 的二次非剩余\\&= 0,\ a ≡0 \mod\ p\end{align}$$
+$$\left(\frac{a}{p}\right)=\begin{cases}1, &a ≢ 0 \mod p\text{ 且 }a\text{ 是模 }p\text{ 的二次剩余} \\ -1, &a ≢ 0 \mod p\text{ 且 }a\text{ 是模 }p\text{ 的二次非剩余} \\ 0, &a ≡0 \mod p \end{cases}$$
 
 欧拉判别法内容：$(a/p) \equiv a^{(p-1)/2} \mod p$。
 
@@ -425,7 +423,7 @@ print(r)
 
 ### SumUp
 
-$x^{n} \equiv a\ mod\ p$，求x
+$x^{n} \equiv a\ mod\ p$，求 x
 
 ```python
 # function:
@@ -472,7 +470,7 @@ Find the integer `a` such that `x ≡ a mod 935`
 
 YouTube 上找了个视频看了原理，跟着视频手算出来了结果，感觉跟着例题一步步算真的能加深理解诶，很容易就理解到了原理和用法。
 
-![QQ图片20220504013531](https://img.hawa130.com/QQ图片20220504013531.jpg)
+![求解过程](https://img.hawa130.com/求解过程.jpg)
 
 算法直接找了个板子，偷个懒捏。
 
