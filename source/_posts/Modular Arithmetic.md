@@ -367,7 +367,7 @@ Now for the flag. Given the following 1024 bit prime and 10 integers, find the q
 
 Legendre 符号的欧拉判别法。
 
-$$\left(\frac{a}{p}\right)=\begin{cases}1, &a ≢ 0 \mod p\text{ 且 }a\text{ 是模 }p\text{ 的二次剩余} \\ -1, &a ≢ 0 \mod p\text{ 且 }a\text{ 是模 }p\text{ 的二次非剩余} \\ 0, &a ≡0 \mod p \end{cases}$$
+$$\left(\frac{a}{p}\right)=\begin{cases}1, &a ≢ 0 \mod p\text{ 且 }a\text{ 是模 }p\text{ 的二次剩余} \\\ -1, &a ≢ 0 \mod p\text{ 且 }a\text{ 是模 }p\text{ 的二次非剩余} \\\ 0, &a ≡0 \mod p \end{cases}$$
 
 欧拉判别法内容：$(a/p) \equiv a^{(p-1)/2} \mod p$。
 
