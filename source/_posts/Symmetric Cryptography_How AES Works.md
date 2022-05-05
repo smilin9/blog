@@ -262,9 +262,9 @@ We've provided code to perform MixColumns and the forward ShiftRows operation. A
 
 ###  Analyze
 
-首先是补全 inv_shift_rows()，参考 shift_rows()，发现是给第 n 行向左移动 n 个单位 ，那inv_shift_rows 就给第 n 行向右移动 n 个单位。
+首先是补全 inv_shift_rows()，参考 shift_rows()，发现是给第 n 行向左移动 n 个单位 ，那 inv_shift_rows 就给第 n 行向右移动 n 个单位。
 
-然后根据 description 依次运行 `inv_mix_columns(state)`、 `inv_shift_rows(state)`，然后把前面用过的矩阵转字节的函数 matrix2bytes() 搬过来，输出一下。
+然后根据 description 依次运行 `inv_mix_columns(state)` `inv_shift_rows(state)`，然后把前面用过的矩阵转字节的函数 matrix2bytes() 搬过来，输出一下。
 
 ### Code
 
@@ -305,7 +305,7 @@ The code used in these exercises has been taken from Bo Zhu's super simple Pytho
 
 这题最头疼了，开始没明白到底要啥，看了半天发现是要补全好几处代码，而且给的 .py 文件还各种报错，很烦反正。
 
-后面发现这是AES基础的最后一道相当于总结的题，就直接把前面几道题用到的函数和矩阵啥的全粘过来了，然后看了看有注释但没代码的地方，几乎是把前几个文件的代码拼到一起咯。然后基本就是一个完整的 AES。
+后面发现这是 AES 基础的最后一道相当于总结的题，就直接把前面几道题用到的函数和矩阵啥的全粘过来了，然后看了看有注释但没代码的地方，几乎是把前几个文件的代码拼到一起咯。然后基本就是一个完整的 AES。
 
 还有，前面有一道题提到用了 pwn 库的 xor() 函数，现在想给自己埋咯。
 
