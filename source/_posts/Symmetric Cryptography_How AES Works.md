@@ -2,7 +2,7 @@
 title: Symmetric Cryptography_How AES Works
 date: 2022-05-05 23:42:00
 tags: cryptohack
-mathjax: trues
+mathjax: true
 ---
 
 第三章好像是做的最迷的
@@ -122,7 +122,7 @@ print(matrix2bytes(matrix))
 
 ```python
 # function
-sum()  # 可以把二维矩阵压缩到一维列表
+sum()  # 把迭代对象里的每一个元素相加。（当元素是列表，就有压平的效果咯）
 ```
 
 ## Round Keys
