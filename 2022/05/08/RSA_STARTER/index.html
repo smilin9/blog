@@ -7,7 +7,7 @@ html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
 toggle.addEventListener('click', () => {
 localStorage.dark = !(html.dataset.dark == 'true');
 html.dataset.dark = localStorage.dark;
-});</script><meta name="generator" content="Hexo 6.1.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">RSA_STARTER</h1><a id="logo" href="/.">smilin9's Blog</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-book"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">RSA_STARTER</h1><div class="post-meta">2022-05-08<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 953</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 5</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>这个超快！</p>
+});</script><meta name="generator" content="Hexo 6.1.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">RSA_STARTER</h1><a id="logo" href="/.">smilin9's Blog</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-book"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">RSA_STARTER</h1><div class="post-meta">2022-05-08<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 5</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="post-content"><p>这个超快！</p>
 <p>我看谁不是速通（bushi</p>
 <span id="more"></span>
 
@@ -76,10 +76,26 @@ html.dataset.dark = localStorage.dark;
 <p>Sign the flag <code>crypto&#123;Immut4ble_m3ssag1ng&#125;</code> using your private key and the SHA256 hash function.</p>
 <h3 id="Analyze-5"><a href="#Analyze-5" class="headerlink" title="Analyze"></a>Analyze</h3><p>英文看得有点头大，得浅理一下逻辑。</p>
 <blockquote>
+<p>Alice 向 Bob 发送消息：</p>
+<ol>
+<li><p>用 Bob 的公钥加密得到 C</p>
+</li>
+<li><p>签名</p>
+</li>
+</ol>
+<blockquote>
 <p>签名步骤</p>
 <ol>
-<li>求消息的哈希值</li>
-<li>用私钥加密哈希值</li>
+<li>求消息的哈希值 H</li>
+<li>用 Alice 的私钥“加密”哈希值得到 S</li>
+</ol>
+</blockquote>
+<p>Bob 接收 Alice 的消息：</p>
+<ol>
+<li>用 Bob 的私钥解密得到 m</li>
+<li>用 Alice 的公钥计算“解密”得到 s</li>
+<li>计算消息的哈希值 H</li>
+<li>比较 s 和 H，二者相等就能确定消息是真实的</li>
 </ol>
 </blockquote>
 <p>签名是个蛮好玩的东西捏。</p>
