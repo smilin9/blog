@@ -204,10 +204,23 @@ Sign the flag `crypto{Immut4ble_m3ssag1ng}` using your private key and the SHA25
 
 英文看得有点头大，得浅理一下逻辑。
 
->签名步骤
+>Alice 向 Bob 发送消息：
 >
->1. 求消息的哈希值
->2. 用私钥加密哈希值
+>1. 用 Bob 的公钥加密得到 C
+>
+>2. 签名
+>
+>   > 签名步骤
+>   >
+>   > 1. 求消息的哈希值 H
+>   > 2. 用 Alice 的私钥“加密”哈希值得到 S
+>
+>Bob 接收 Alice 的消息：
+>
+>1. 用 Bob 的私钥解密得到 m
+>2. 用 Alice 的公钥计算“解密”得到 s
+>3. 计算消息的哈希值 H
+>4. 比较 s 和 H，二者相等就能确定消息是真实的
 
 签名是个蛮好玩的东西捏。
 
