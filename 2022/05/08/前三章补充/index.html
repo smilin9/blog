@@ -11,7 +11,7 @@ html.dataset.dark = localStorage.dark;
 <span id="more"></span>
 
 <p>我真的谢。</p>
-<p>7号凌晨和面试师傅抱怨 Courses 第五章的 ECC 难学，师傅震惊：“你怎么去学 ECC 了？”，然后发现面试任务竟然是 Challenge 的那些章节，当时就心态大崩，我就说 ECC 怎么会是我现在可以染指的东西（麻。</p>
+<p>7 号凌晨和面试师傅抱怨 Courses 第五章的 ECC 难学，师傅震惊：“你怎么去学 ECC 了？”，然后发现面试任务竟然是 Challenge 的那些章节，当时就心态大崩，我就说 ECC 怎么会是我现在可以染指的东西（麻。</p>
 <p>不过还好师傅把二面时间延迟到 10 号了，7 号调休 9 号满课，算下来其实也就多了 8 号的周日可以做题，所以 8 号我必早起！</p>
 <p>这篇先补一下 Challenge 前三章没做的题，第五章后面再单独写吧。</p>
 <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h2 id="Network-Attacks"><a href="#Network-Attacks" class="headerlink" title="Network Attacks"></a>Network Attacks</h2><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Several of the challenges are dynamic and require you to talk to our challenge servers over the network. This allows you to perform man-in-the-middle attacks on people trying to communicate, or directly attack a vulnerable service. To keep things consistent, our interactive servers always send and receive JSON objects.</p>
@@ -19,7 +19,7 @@ html.dataset.dark = localStorage.dark;
 <p>For this challenge, connect to <code>socket.cryptohack.org</code> on port <code>11112</code>. Send a JSON object with the key <code>buy</code> and value <code>flag</code>.</p>
 <p>The example script below contains the beginnings of a solution for you to modify, and you can reuse it for later challenges.</p>
 <p>Connect at <code>nc socket.cryptohack.org 11112</code>.</p>
-<h3 id="Analyze"><a href="#Analyze" class="headerlink" title="Analyze"></a>Analyze</h3><p>使用中间人攻击的方式获取flag。</p>
+<h3 id="Analyze"><a href="#Analyze" class="headerlink" title="Analyze"></a>Analyze</h3><p>使用中间人攻击的方式获取 flag 。</p>
 <p>使用 telnetlib 库对 socket.cryptohack.org 11112端口以  JSON 对象的方式进行请求。</p>
 <p>题目说的很明确，就把 buy 的值改成 flag，运行代码就能出结果。</p>
 <h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 部分代码</span></span><br><span class="line">request = &#123;</span><br><span class="line">    <span class="string">&quot;buy&quot;</span>: <span class="string">&quot;flag&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -87,7 +87,7 @@ html.dataset.dark = localStorage.dark;
 <p>Due to such events, together with the fact that fraudulent certificates can take a long time to be discovered, since 2018 Certificate Transparency has been enforced by Google Chrome. Every CA must publish all certificates that they issue to a log, which anyone can search.</p>
 <p>Attached is an RSA public key in PEM format. Find the subdomain of cryptohack.org which uses these parameters in its TLS certificate, and visit that subdomain to obtain the flag.</p>
 <h3 id="Analyze-6"><a href="#Analyze-6" class="headerlink" title="Analyze"></a>Analyze</h3><p>这题怎么说呢，一言难尽。</p>
-<p>倒是能解出来 n，但是怎么找到包含 n 的证书对应的域名，搜了很久也没找到。</p>
+<p>倒是能解出来 n，但是怎么找到包含 n 的证书对应的域名呢，搜了很久也没找到。</p>
 <p>最后是直接去爆破，找到 url 里包含 flag 的子域名，访问得到 flag。</p>
 <p>也可以用 <a target="_blank" rel="noopener" href="https://crt.sh/">crt.sh</a> 搜指纹，查日志记录，不过也没用到公钥。</p>
 <p>最后还是不知道怎么用公钥推域名，怪捏。</p>
