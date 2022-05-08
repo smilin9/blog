@@ -55,9 +55,7 @@ Together the exponent and modulus form an RSA "public key" `(N, e)`. The most co
 
 ###  Analyze
 
-两个素数的乘积为模数。
-
-还是填数。
+两个素数的乘积为模数。还是无脑填数。
 
 ### Code
 
@@ -90,7 +88,7 @@ What is the totient of `N`?
 
 因为 p，q 都是素数，所以 $φ(p) = p - 1$ ，$φ(q) = q - 1$。
 
-在这道题里面就是
+在这道题里面是这样
 
 $$\begin{align}φ(N) &= φ(p*q) \\\ &= φ(p)φ(q) \\\ &= (p-1)(q-1)\end{align}$$
 
@@ -166,7 +164,7 @@ c = 77578995801157823671636298847186723593814843845525223303932
 
 ###  Analyze
 
-和第一题没区别，填数游戏。
+和第一题没区别，无脑填数。
 
 ### Code
 
