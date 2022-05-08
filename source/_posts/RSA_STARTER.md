@@ -210,10 +210,10 @@ Sign the flag `crypto{Immut4ble_m3ssag1ng}` using your private key and the SHA25
 >
 >2. 签名
 >
->   > 签名步骤
->   >
->   > 1. 求消息的哈希值 H
->   > 2. 用 Alice 的私钥“加密”哈希值得到 S
+>   ​	步骤
+>
+>   1. 求消息的哈希值 H
+>   2. 用 Alice 的私钥“加密”哈希值得到 S
 >
 >Bob 接收 Alice 的消息：
 >
