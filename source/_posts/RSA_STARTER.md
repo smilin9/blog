@@ -207,11 +207,7 @@ Sign the flag `crypto{Immut4ble_m3ssag1ng}` using your private key and the SHA25
 >Alice 向 Bob 发送消息：
 >
 >1. 用 Bob 的公钥加密得到 C
->
 >2. 签名
->
->   ​	步骤
->
 >   1. 求消息的哈希值 H
 >   2. 用 Alice 的私钥“加密”哈希值得到 S
 >
