@@ -122,8 +122,8 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
 links:
   - title: hawa130
     url: http://www.hawa130.com/
-#  - title: site-name2
-#    url: http://www.example2.com/
+  - title: 康师傅
+    url: https://blog.ksfu.top/
 #  - title: site-name3
 #    url: http://www.example3.com/
 
