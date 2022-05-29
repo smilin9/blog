@@ -1,7 +1,7 @@
 ---
 title: Hello World！
 date: 2022-04-30 15:30:00
-tags: 废话
+tags: 垃圾桶
 ---
 欢迎来到我的 Blog！这是本博客的第一篇文章。
 
