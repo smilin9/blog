@@ -2,7 +2,6 @@
 title: Introduction To Cryptohack
 date: 2022-05-01 19:33:32
 tags: cryptohack
-cover: https://img.hawa130.com/Introduction.jpg
 mathjax: true
 ---
 
