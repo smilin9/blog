@@ -1,14 +1,195 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>smilin9's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><div class="darkmode-toggle">🌓</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-var toggle = document.querySelector('.darkmode-toggle');
-var html = document.querySelector('html');
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>smilin9's Blog</title><meta name="keywords" content="blog"><meta name="author" content="smilin9"><meta name="copyright" content="smilin9"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="smilin9&#39;s Blog">
+<meta property="og:url" content="http://smilin9.com/">
+<meta property="og:site_name" content="smilin9&#39;s Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="smilin9">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://smilin9.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'smilin9\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-06-14 05:26:30'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-toggle.addEventListener('click', () => {
-localStorage.dark = !(html.dataset.dark == 'true');
-html.dataset.dark = localStorage.dark;
-});</script><meta name="generator" content="Hexo 6.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">smilin9's Blog</h1><a id="logo" href="/.">smilin9's Blog</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-book"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"><a href="/2022/06/13/%E9%B1%BC%E9%B1%BC%E6%97%A5%E8%AE%B0/">鱼鱼日记</a></h1><div class="post-meta">2022-06-13</div><div class="post-content"><h4 id="6-14"><a href="#6-14" class="headerlink" title="6.14"></a>6.14</h4><p>现在是早上4：23，很奇怪今天一点也不困啊啊啊啊，也许是因为昨天下午四点多才起床吧。虽然每次晚起第一时间都会觉得很懊恼，自己怎么又睡这么久，又浪费了大半天的时间，剩下的半天又做不了什么，一天又要这样草率的过去了。但是有时候也会感觉，睡着多好啊，什么也不知道，真么也不用想，不用考虑，没有烦心事，没有 ddl，没有不知道怎么处理的人际关系，睡着最好了。</p></div><p class="readmore"><a href="/2022/06/13/%E9%B1%BC%E9%B1%BC%E6%97%A5%E8%AE%B0/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2022/05/08/RSA_STARTER/">RSA_STARTER</a></h1><div class="post-meta">2022-05-08</div><div class="post-content"><p>这个超快！</p>
-<p>我看谁不是速通（bushi</p></div><p class="readmore"><a href="/2022/05/08/RSA_STARTER/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2022/05/08/%E5%89%8D%E4%B8%89%E7%AB%A0%E8%A1%A5%E5%85%85/">前三章补充</a></h1><div class="post-meta">2022-05-08</div><div class="post-content"><p>之前竟然做错模块了？寄！</p></div><p class="readmore"><a href="/2022/05/08/%E5%89%8D%E4%B8%89%E7%AB%A0%E8%A1%A5%E5%85%85/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2022/05/05/Symmetric%20Cryptography_How%20AES%20Works/">Symmetric Cryptography_How AES Works</a></h1><div class="post-meta">2022-05-05</div><div class="post-content"><p>第三章好像是做的最迷的</p></div><p class="readmore"><a href="/2022/05/05/Symmetric%20Cryptography_How%20AES%20Works/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2022/05/03/Modular%20Arithmetic/">Modular Arithmetic</a></h1><div class="post-meta">2022-05-03</div><div class="post-content"><p>第二章也做完咯~</p></div><p class="readmore"><a href="/2022/05/03/Modular%20Arithmetic/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2022/05/01/Introduction%20To%20Cryptohack/">Introduction To Cryptohack</a></h1><div class="post-meta">2022-05-01</div><div class="post-content"><p>做完第一章咯~</p></div><p class="readmore"><a href="/2022/05/01/Introduction%20To%20Cryptohack/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2022/04/30/%E5%BC%80%E5%A7%8Bcryptohack/">开始cryptohack</a></h1><div class="post-meta">2022-04-30</div><div class="post-content"><p>刚刚搭好博客，来水第一篇文章咯！（bushi</p></div><p class="readmore"><a href="/2022/04/30/%E5%BC%80%E5%A7%8Bcryptohack/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2022/04/30/hello-world/">Hello World！</a></h1><div class="post-meta">2022-04-30</div><div class="post-content"><p>欢迎来到我的 Blog！这是本博客的第一篇文章。</p></div><p class="readmore"><a href="/2022/04/30/hello-world/">阅读全文</a></p></div><script type="text/x-mathjax-config">MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-  });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" async></script></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://smilin9.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/cryptohack/" style="font-size: 15px;">cryptohack</a> <a href="/tags/%E5%9E%83%E5%9C%BE%E6%A1%B6/" style="font-size: 15px;">垃圾桶</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2022/06/13/%E9%B1%BC%E9%B1%BC%E6%97%A5%E8%AE%B0/">鱼鱼日记</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/05/08/RSA_STARTER/">RSA_STARTER</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/05/08/%E5%89%8D%E4%B8%89%E7%AB%A0%E8%A1%A5%E5%85%85/">前三章补充</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/05/05/Symmetric%20Cryptography_How%20AES%20Works/">Symmetric Cryptography_How AES Works</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/05/03/Modular%20Arithmetic/">Modular Arithmetic</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/05/01/Introduction%20To%20Cryptohack/">Introduction To Cryptohack</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/04/30/%E5%BC%80%E5%A7%8Bcryptohack/">开始cryptohack</a></li><li class="post-list-item"><a class="post-list-link" href="/2022/04/30/hello-world/">Hello World！</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友链</i></div><ul></ul><a href="http://www.hawa130.com/" title="hawa130" target="_blank">hawa130</a><ul></ul><a href="https://blog.ksfu.top/" title="康师傅" target="_blank">康师傅</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">smilin9's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.css"><script type="text/javascript" src="/js/love.js?v=1.0.0"></script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="/css/external.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa-solid fa-house"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa-solid fa-box-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa-solid fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa-solid fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-circle-info"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">smilin9's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa-solid fa-house"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa-solid fa-box-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa-solid fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa-solid fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa-solid fa-circle-info"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">smilin9's Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/06/13/%E9%B1%BC%E9%B1%BC%E6%97%A5%E8%AE%B0/" title="鱼鱼日记"><img class="post_bg" src="https://img.hawa130.com/鱼鱼日记.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="鱼鱼日记"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/13/%E9%B1%BC%E9%B1%BC%E6%97%A5%E8%AE%B0/" title="鱼鱼日记">鱼鱼日记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-13T20:23:32.000Z" title="发表于 2022-06-14 04:23:32">2022-06-14</time></span></div><div class="content">6.14现在是早上4：23，很奇怪今天一点也不困啊啊啊啊，也许是因为昨天下午四点多才起床吧。虽然每次晚起第一时间都会觉得很懊恼，自己怎么又睡这么久，又浪费了大半天的时间，剩下的半天又做不了什么，一天又要这样草率的过去了。但是有时候也会感觉，睡着多好啊，什么也不知道，真么也不用想，不用考虑，没有烦心事，没有 ddl，没有不知道怎么处理的人际关系，睡着最好了。
+16 号就要开始考试了，不知道为什么，越是期末考试周之类应该有压力有紧迫感的时候，越是静不下心来好好复习。平时没什么事的时候却能因为学点什么东西一坐就是一整天。感觉这次考试多半又是要寄，每天的有效复习时间没几个小时，很容易被别人吸引注意力。
+现在坐在 423，戴着两只耳机，待在自己的世界里，只能听到自己的打字声和歌声。不想复习，不想回去睡觉，只想放空自己，安安静静听会歌，干点自己的事情，或者搞一搞博客的主题配置，然后待会去吃早饭。感觉自己其实是一个喜欢动手的人，学会一些新东西的时候，总是会急于尝试动手操作或者复现它，这应该算是自己比较好的一点吧。但是即使是一些没有什么意义的机械性实操，对我的吸引力也比一些很需要动脑的事情大得多。反正 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/05/08/RSA_STARTER/" title="RSA_STARTER"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RSA_STARTER"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/08/RSA_STARTER/" title="RSA_STARTER">RSA_STARTER</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-08T17:42:00.000Z" title="发表于 2022-05-09 01:42:00">2022-05-09</time></span></div><div class="content">这个超快！
+我看谁不是速通（bushi
+
+
+最后一块内容，没想到意外地顺利，舒服捏。
+RSA_STARTERRSA Starter 1DescriptionAll operations in RSA involve modular exponentiation.
+Modular exponentiation is an operation that is used extensively in cryptography and is normally written like: 2¹⁰ mod 17
+You can think of this as raising some number to a certain power (2¹⁰ = 1024), and then taking the remainder of the division by some other number (1024 mod 17 = 4). In Python there’s a built-in operator for performing this operation: pow(base, expo ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/05/08/%E5%89%8D%E4%B8%89%E7%AB%A0%E8%A1%A5%E5%85%85/" title="前三章补充"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前三章补充"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/08/%E5%89%8D%E4%B8%89%E7%AB%A0%E8%A1%A5%E5%85%85/" title="前三章补充">前三章补充</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-08T07:29:00.000Z" title="发表于 2022-05-08 15:29:00">2022-05-08</time></span></div><div class="content">之前竟然做错模块了？寄！
+
+
+我真的谢。
+7 号凌晨和面试师傅抱怨 Courses 第五章的 ECC 难学，师傅震惊：“你怎么去学 ECC 了？”，然后发现面试任务竟然是 Challenge 的那些章节，当时就心态大崩，我就说 ECC 怎么会是我现在可以染指的东西啊（麻。。
+不过还好师傅把二面时间延迟到 10 号了，7 号调休 9 号满课，算下来其实也就多了 8 号的周日可以做题，所以 8 号我必早起！
+这篇先补一下 Challenge 前三章没做的题，第五章后面再单独写吧。
+IntroductionNetwork AttacksDescriptionSeveral of the challenges are dynamic and require you to talk to our challenge servers over the network. This allows you to perform man-in-the-middle attacks on people trying to communicate, or directly attack a vulnerabl ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/05/05/Symmetric%20Cryptography_How%20AES%20Works/" title="Symmetric Cryptography_How AES Works"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Symmetric Cryptography_How AES Works"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/05/Symmetric%20Cryptography_How%20AES%20Works/" title="Symmetric Cryptography_How AES Works">Symmetric Cryptography_How AES Works</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-05T15:42:00.000Z" title="发表于 2022-05-05 23:42:00">2022-05-05</time></span></div><div class="content">第三章好像是做的最迷的
+
+
+虽然只需要做 ”How AES Works” 部分。但是——
+刚开始第三章：还以为会越来越难，没想到做完数论就柳暗花明了？
+第三章最后一题：什么东西啊这是，这怎么比数论那块还复杂。。
+Symmetric Cryptography_How AES WorksKeyed PermutationsDescriptionAES, like all good block ciphers, performs a “keyed permutation”. This means that it maps every possible input block to a unique output block, with a key determining which permutation to perform.
+
+A “block” just refers to a fixed number of bits or bytes, which may represent any kind of data. AES processes a block and outputs an ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/05/03/Modular%20Arithmetic/" title="Modular Arithmetic"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Modular Arithmetic"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/03/Modular%20Arithmetic/" title="Modular Arithmetic">Modular Arithmetic</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-03T11:56:00.000Z" title="发表于 2022-05-03 19:56:00">2022-05-03</time></span></div><div class="content">第二章也做完咯~
+
+
+看到这章的标题就感觉要寄。
+进去一看果然，全是数学。。（数学废物笑不出来
+做了近两天，我只能说数学博大精深，做数学题真的会谢。。
+交完最后一题的 flag 觉得整个人都放松下来了，然后就感觉精疲力尽。
+做的很艰难，尤其 python 用的还是那么不利索。
+由于有些题的代码是通过推导之后直接通过数学定理化简，所以代码很简单。
+Modular ArithmeticGreatest Common DivisorDescriptionThe Greatest Common Divisor (GCD), sometimes known as the highest common factor, is the largest number which divides two positive integers (a,b).
+For a = 12, b = 8 we can calculate the divisors of a: &#123;1,2,3,4,6,12&#125; and the divisors of b: &#123;1,2,4,8&#125;. Compa ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/05/01/Introduction%20To%20Cryptohack/" title="Introduction To Cryptohack"><img class="post_bg" src="https://img.hawa130.com/Introduction.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Introduction To Cryptohack"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/01/Introduction%20To%20Cryptohack/" title="Introduction To Cryptohack">Introduction To Cryptohack</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-01T11:33:32.000Z" title="发表于 2022-05-01 19:33:32">2022-05-01</time></span></div><div class="content">做完第一章咯~
+
+
+做了大半天才做完，主要是 python 语法什么的写起来比较手生，有 python 基础的话可能会做得更顺手一点。
+这一章的知识都属于比较基础的，甚至大部分题几乎都是直接把 flag 怼脸上（笑
+做完题之后犹豫了一下博客是单纯写解题相关还是顺便附上知识点总结，想起之前说的浅（shen）浅（shen）记录，所以还是打算都写写，不是什么坏事捏。
+Introduction To CryptohackFinding FlagsDescriptionEach challenge is designed to help introduce you to a new piece of cryptography. Solving a challenge will require you to find a “flag”.
+These flags will usually be in the formatcrypto&#123;y0ur_f1rst_fl4g&#125;. The flag format helps you verify that you found the corr ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/04/30/%E5%BC%80%E5%A7%8Bcryptohack/" title="开始cryptohack"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="开始cryptohack"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/04/30/%E5%BC%80%E5%A7%8Bcryptohack/" title="开始cryptohack">开始cryptohack</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-04-30T20:04:32.000Z" title="发表于 2022-05-01 04:04:32">2022-05-01</time></span></div><div class="content">刚刚搭好博客，来水第一篇文章咯！（bushi
+
+
+今天去面试 xdsec 咯，虽然很紧张也磕磕绊绊，但总算是结束咯。只是最后惊闻噩耗，面试任务 5.7 截止，所以整个五一假期都要用来做面试任务，那我当然心甘情愿 很不乐意 。又因为想要快点充实自己的博客然后拿去和朋友们分享，所以想到可以用这个博客浅（shen）浅（shen）记录一下学习过程。（和解题思路？虽然面试师傅说布置的都是简单基础题，但是可能对小白 指我 来说还是需要一些思考的吧
+说到这个，想起去年鸽掉了二面，当时虽然想进协会但是自己是个懒狗（可能现在也是），后来面试师傅刚好是好朋友，一直在催我学相关知识，也很感谢师傅的操心（bushi），如果只是自己一个人的话，很可能就不会再去试着学习这方面的东西提升自己了。
+不管结果怎么样，就是说希望自己这次可以好好学几天东西，算是给自己一个交代吧。
+对咯，接下来 tag:cryptohack 底下的文章都会是 cryptohack 上的题，如果你也是和我一样的小白，也许可以通过这些文章和我一起学习喔。
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/04/30/hello-world/" title="Hello World！"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World！"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/04/30/hello-world/" title="Hello World！">Hello World！</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-04-30T07:30:00.000Z" title="发表于 2022-04-30 15:30:00">2022-04-30</time></span></div><div class="content">欢迎来到我的 Blog！这是本博客的第一篇文章。
+
+
+这是超厉害的 smilin9 历时两天（其实加起来不到一天）搭建的静态博客。
+非常感谢 hawa130 耐心解答我的一系列傻瓜问题。
+欢迎交流学习！
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">smilin9</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/06/13/%E9%B1%BC%E9%B1%BC%E6%97%A5%E8%AE%B0/" title="鱼鱼日记"><img src="https://img.hawa130.com/鱼鱼日记.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="鱼鱼日记"/></a><div class="content"><a class="title" href="/2022/06/13/%E9%B1%BC%E9%B1%BC%E6%97%A5%E8%AE%B0/" title="鱼鱼日记">鱼鱼日记</a><time datetime="2022-06-13T20:23:32.000Z" title="发表于 2022-06-14 04:23:32">2022-06-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/08/RSA_STARTER/" title="RSA_STARTER"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RSA_STARTER"/></a><div class="content"><a class="title" href="/2022/05/08/RSA_STARTER/" title="RSA_STARTER">RSA_STARTER</a><time datetime="2022-05-08T17:42:00.000Z" title="发表于 2022-05-09 01:42:00">2022-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/08/%E5%89%8D%E4%B8%89%E7%AB%A0%E8%A1%A5%E5%85%85/" title="前三章补充"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前三章补充"/></a><div class="content"><a class="title" href="/2022/05/08/%E5%89%8D%E4%B8%89%E7%AB%A0%E8%A1%A5%E5%85%85/" title="前三章补充">前三章补充</a><time datetime="2022-05-08T07:29:00.000Z" title="发表于 2022-05-08 15:29:00">2022-05-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/05/Symmetric%20Cryptography_How%20AES%20Works/" title="Symmetric Cryptography_How AES Works"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Symmetric Cryptography_How AES Works"/></a><div class="content"><a class="title" href="/2022/05/05/Symmetric%20Cryptography_How%20AES%20Works/" title="Symmetric Cryptography_How AES Works">Symmetric Cryptography_How AES Works</a><time datetime="2022-05-05T15:42:00.000Z" title="发表于 2022-05-05 23:42:00">2022-05-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/03/Modular%20Arithmetic/" title="Modular Arithmetic"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Modular Arithmetic"/></a><div class="content"><a class="title" href="/2022/05/03/Modular%20Arithmetic/" title="Modular Arithmetic">Modular Arithmetic</a><time datetime="2022-05-03T11:56:00.000Z" title="发表于 2022-05-03 19:56:00">2022-05-03</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/cryptohack/" style="font-size: 1.5em; color: #99a9bf">cryptohack</a> <a href="/tags/%E5%9E%83%E5%9C%BE%E6%A1%B6/" style="font-size: 1.1em; color: #999">垃圾桶</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">8</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-06-13T21:26:30.035Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By smilin9</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
