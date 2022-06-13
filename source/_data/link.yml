@@ -1,0 +1,11 @@
+- class_name: 友链
+  class_desc: 
+  link_list:
+    - name: hawa130
+      link: https://hawa130.com/
+      avatar: https://gravatar.loli.net/avatar/ede3afe16459e2cd9347dcde4c20973f?s=512
+      descr: 书记
+    - name: ksfu
+      link: blog.ksfu.top
+      avatar: https://blog.ksfu.top/img/head.webp
+      descr: 康师傅
