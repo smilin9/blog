@@ -1,5 +1,5 @@
 ---
-title: start of cryptohack
+title: Start Of Cryptohack
 date: 2022-05-01 04:04:32
 cover: https://img.hawa130.com/start.jpg
 tags:
