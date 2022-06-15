@@ -2,6 +2,7 @@
 title: Modular Arithmetic
 date: 2022-05-03 19:56:00
 tags: cryptohack
+categories: 学习
 mathjax: true
 ---
 
