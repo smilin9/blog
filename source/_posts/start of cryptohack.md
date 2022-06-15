@@ -5,6 +5,7 @@ cover: https://img.hawa130.com/start.jpg
 tags:
 - 垃圾桶
 - cryptohack
+categories: 学习
 ---
 
 刚刚搭好博客，来水第一篇文章咯！（bushi
