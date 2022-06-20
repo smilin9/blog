@@ -50,7 +50,10 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}" # 如果没有查到内容相关内容显示
   preload: false
   CDN:
 
@@ -739,9 +742,9 @@ fancybox: true
 # mermaid
 # see https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: false
+  enable: true
   # built-in themes: default/forest/dark/neutral
-  theme:
+  theme: 
     light: default
     dark: dark
 
