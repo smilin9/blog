@@ -1,5 +1,5 @@
 - class_name: 友链
-  class_desc: 
+  class_desc:
   link_list:
     - name: hawa130
       link: https://hawa130.com/
@@ -9,3 +9,23 @@
       link: https://blog.ksfu.top/
       avatar: https://blog.ksfu.top/img/head.webp
       descr: 康师傅
+    - name: Yh
+      link: https://wyh01.top/
+      avatar: https://wyh01.top/images/avatar.jpg
+      descr: yhgg
+    - name: 小北
+      link: https://xiaobeo.top/
+      avatar: https://image.xiaobeo.top/img/user.jpg
+      descr: 小北
+    - name: Robotxm
+      link: https://moefactory.com
+      avatar: https://mf-1251409846.cos.ap-chengdu.myqcloud.com/common/images/avatar/takeshi/takeshi.png
+      descr: xmgg!
+    - name: SuperBart
+      link: https://www.superbart.xyz/
+      avatar: https://legacy.superbart.xyz/favicon.ico
+      descr: 贴贴szgg
+    - name: AweiP
+      link: https://aweip.com
+      avatar: https://cdn.aweip.com/Blog/asahi.png
+      descr: 可爱康康
