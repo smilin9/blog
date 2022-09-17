@@ -108,13 +108,16 @@ deploy:
 mathjax: true
 
 # Extensions
-plugins:
+## Plugins: http://hexo.io/plugins/
+#RSS订阅
+plugin:
   hexo-generator-feed
 #Feed Atom
 feed:
-  type: atom
-  path: atom.xml
-  limit: 20
+  type: atom #RSS的类型(atom/rss2)
+  path: atom.xml #文件路径,默认是atom.xml/rss2.xml
+  limit: 20 #展示文章的数量,使用0或则false代表展示全部
+
 
 
 kramed:
