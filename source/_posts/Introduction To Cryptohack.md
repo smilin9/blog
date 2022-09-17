@@ -17,8 +17,6 @@ mathjax: true
 
 做完题之后犹豫了一下博客是单纯写解题相关还是顺便附上知识点总结，想起之前说的浅（shen）浅（shen）记录，所以还是打算都写写，不是什么坏事捏。
 
-# Introduction To Cryptohack
-
 ## Finding Flags
 
 ### Description
