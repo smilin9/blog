@@ -22,8 +22,6 @@ mathjax: true
 
 由于有些题的代码是通过推导之后直接通过数学定理化简，所以代码很简单。
 
-# Modular Arithmetic
-
 ## Greatest Common Divisor
 
 ### Description
