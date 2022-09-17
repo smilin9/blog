@@ -897,3 +897,7 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
+
+
+# RSS订阅
+rss: /atom.xml
