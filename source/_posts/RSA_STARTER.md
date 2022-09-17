@@ -14,8 +14,6 @@ mathjax: true
 
 最后一块内容，没想到意外地顺利，舒服捏。
 
-# RSA_STARTER
-
 ## RSA Starter 1   
 
 ### Description
