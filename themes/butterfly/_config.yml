@@ -37,6 +37,7 @@ copy:
 social:
   fab fa-github: https://github.com/smilin9 || Github
   fas fa-envelope: mailto:qliu_6@stu.xidian.edu.cn || Email
+  fa fa-rss: atom.xml || Rss
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
